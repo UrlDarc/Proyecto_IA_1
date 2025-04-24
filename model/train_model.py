@@ -98,7 +98,6 @@ print("\nClassification Report:")
 report = classification_report(y_true, y_pred, digits=3)
 print(report)
 
-# Guardar en archivo si se desea
 with open('model/metrics_report.txt', 'w') as f:
     f.write("Accuracy: {:.3f}\n\n".format(accuracy_score(y_true, y_pred)))
     f.write(report)
